@@ -1,0 +1,406 @@
+@font-face {
+  font-family: nexa;
+  src: url(font/Nexa-Heavy.ttf);
+}
+@font-face {
+  font-family: prompt-black;
+  src: url(font/Prompt-Black.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(font/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  line-height: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  position: relative;
+  padding: 12px;
+  background-color: #232421;
+}
+header .logo {
+  width: 20%;
+}
+header .logo a {
+  width: 100%;
+  position: relative;
+  color: #ccee09;
+  font-family: nexa;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2px;
+}
+header .logo a .mirror {
+  transform: scaleX(-1);
+}
+header .logo a .ligne {
+  height: 3px;
+  background-color: #ccee09;
+  width: 5%;
+}
+header nav {
+  width: 60%;
+  font-family: roboto;
+  color: #ebf1c6;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 4vw;
+}
+header nav .simple {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2vw;
+}
+header nav .simple li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+header nav .simple hr {
+  width: 0px;
+  background-color: #ccee09;
+  border: none;
+  height: 3px;
+}
+header nav .simple a:hover {
+  transition: 0.2s ease-in-out;
+  color: #ccee09;
+}
+header nav .simple a:hover + hr {
+  width: 100%;
+  transition: 0.3s ease;
+}
+header nav .mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 5vw;
+  position: absolute;
+  width: 100%;
+  color: #ebf1c6;
+  font-size: 1.5rem;
+  height: 100vh;
+  background-color: #232421;
+  top: 70px;
+  right: 0;
+}
+header nav .cv {
+  padding: 5px 15px;
+  border: 2px solid #ccee09;
+  border-radius: 20px;
+}
+header nav .cv:hover {
+  background-color: #ccee09;
+  color: #232421;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 875px) {
+  header nav .simple {
+    display: none;
+  }
+}
+.section1 {
+  width: 100%;
+  height: 70vh;
+  padding: 50px;
+  background-color: #232421;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  overflow: hidden;
+}
+.section1 .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5vw;
+  width: 100%;
+}
+.section1 .banner .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 40%;
+  font-size: 1rem;
+  font-family: nexa;
+  color: #989b8a;
+}
+.section1 .banner .description p:first-child {
+  color: #ccee09;
+}
+.section1 .banner .description h1 {
+  color: #ebf1c6;
+  font-family: nexa;
+  font-size: 3rem;
+}
+.section1 .banner .description span {
+  color: #ebf1c6;
+}
+.section1 .banner .description p:nth-child(4) {
+  color: #ebf1c6;
+}
+.section1 .banner .description a {
+  color: #232421;
+  padding: 5px 15px;
+  background-color: #ccee09;
+  border-radius: 20px;
+  font-size: 0.7em;
+}
+.section1 .banner .description a:hover {
+  background-color: inherit;
+  border: 2px solid #ccee09;
+  color: #ebf1c6;
+  padding: 3px 13px;
+  transition: 0.2s ease;
+}
+.section1 .banner .myself {
+  width: 40%;
+  padding: 2vw;
+  z-index: 2;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section1 .banner .myself .round {
+  background-color: #ccee09;
+  width: 60%;
+  height: 20vw;
+  position: absolute;
+  border-radius: 50%;
+}
+.section1 .banner .myself img {
+  z-index: 1;
+  width: auto;
+  height: 70vh;
+  position: absolute;
+  top: -24vh;
+}
+.section1 .media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  width: 100%;
+  z-index: 2;
+}
+.section1 .media a {
+  color: #ebf1c6;
+  font-size: 2rem;
+}
+.section1 .media a:hover {
+  color: #ccee09;
+  transition: 0.2s ease;
+}
+
+.section2 {
+  width: 100%;
+  padding: 5vw;
+  background-color: #393a37;
+  display: flex;
+  gap: 2vw;
+}
+.section2 .title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.section2 .title p {
+  color: #ccee09;
+  font-family: roboto;
+  font-size: 1em;
+  font-weight: bold;
+}
+.section2 .title h2 {
+  font-size: 1.5em;
+  color: #ebf1c6;
+  font-family: nexa;
+}
+.section2 .title .image {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2 .title .image .square {
+  background-color: #ccee09;
+  clip-path: polygon(71% 0, 100% 26%, 100% 100%, 0 100%, 0 0);
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+}
+.section2 .title .image img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.section2 .information {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.section2 .information .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  font-family: roboto;
+  color: #aaaaa8;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+.section2 .information .text p:nth-child(1) {
+  color: #eeeee8;
+}
+.section2 .personnalInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.section2 .personnalInfo h2 {
+  color: #ebf1c6;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: nexa;
+}
+.section2 .personnalInfo .coordo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .personnalInfo .coordo .left, .section2 .personnalInfo .coordo .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.section2 .personnalInfo .coordo .left div, .section2 .personnalInfo .coordo .right div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+}
+.section2 .personnalInfo .coordo .left div h3, .section2 .personnalInfo .coordo .right div h3 {
+  color: #ebf1c6;
+  font-size: 0.8em;
+  font-family: nexa;
+  font-weight: bold;
+}
+.section2 .personnalInfo .coordo .left div p, .section2 .personnalInfo .coordo .right div p {
+  color: #cbccc5;
+  font-family: roboto;
+  font-size: 0.6em;
+}
+.section2 .personnalInfo a {
+  color: #232421;
+  width: 15%;
+  text-align: center;
+  font-family: roboto;
+  padding: 5px 0;
+  background-color: #ccee09;
+  border-radius: 20px;
+  font-size: 0.6em;
+}
+.section2 .personnalInfo a:hover {
+  color: #ccee09;
+  background-color: inherit;
+  border: 1px solid #ccee09;
+  transition: 0.2s ease;
+}
+
+.section3 {
+  width: 100%;
+  padding: 5vw;
+  background-color: #232421;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.section3 h2 {
+  color: #ccee09;
+  font-size: 2em;
+  font-family: nexa;
+}
+.section3 .list {
+  width: 100%;
+  display: flex;
+  gap: 2vw;
+}
+.section3 .list h3 {
+  color: #ebf1c6;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+.section3 .list h4 {
+  color: #cbccc5;
+  font-family: roboto;
+  font-size: 1em;
+}
+.section3 .list .langage, .section3 .list .framework, .section3 .list .outil {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: 33%;
+}
+.section3 .list .langage .name, .section3 .list .framework .name, .section3 .list .outil .name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  position: relative;
+}
+.section3 .list .langage .name .bar, .section3 .list .framework .name .bar, .section3 .list .outil .name .bar {
+  width: 100%;
+  position: absolute;
+  height: 0.4vw;
+  top: 2vw;
+  border-radius: 2px;
+  border: 1px solid #3e3f3a;
+}
+.section3 .list .langage .name .barAr, .section3 .list .framework .name .barAr, .section3 .list .outil .name .barAr {
+  position: absolute;
+  height: 0.4vw;
+  top: 2vw;
+  border-radius: 2px;
+  background-color: #ccee09;
+}
+
+/*# sourceMappingURL=style.css.map */
