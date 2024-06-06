@@ -9,10 +9,12 @@ const progressBarSymfony = document.querySelector('.symfony');
 const progressBarBootstrap = document.querySelector('.bootstrap');
 const progressBarGit = document.querySelector('.git');
 const progressBarReact = document.querySelector('.react');
+const progressBarVueJs = document.querySelector('.vuejs');
 const progressBarGithub= document.querySelector('.github');
 const progressBarPostman = document.querySelector('.postman');
 const progressBarVscode = document.querySelector('.vscode');
 const progressBarPrestashop = document.querySelector('.prestashop');
+
 
 
 const section3 = document.querySelector('.list');
@@ -41,6 +43,8 @@ const observer = new IntersectionObserver(entries => {
         animateProgressBar(70, progressBarVscode);
         animateProgressBar(70, progressBarGithub);
         animateProgressBar(30, progressBarJava);
+        animateProgressBar(50, progressBarVueJs);
+
     }   
   });
 }, options);
@@ -84,6 +88,9 @@ function animateProgressBar(targetWidth, techno) {
         case techno = progressBarSymfony:
             progressBarSymfony.style.width = `${currentWidth}%`;
             break;
+        case techno = progressBarVueJs:
+            progressBarVueJs.style.width = `${currentWidth}%`;
+            break;
         case techno = progressBarCSS:
             progressBarCSS.style.width = `${currentWidth}%`;
             break;
@@ -109,3 +116,6 @@ function animateProgressBar(targetWidth, techno) {
       }
     }, stepDuration);
   }
+
+let num = "20"
+console.log(45 + num);

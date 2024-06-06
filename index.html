@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/fontawesome.css">
     <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/brands.css">
     <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/solid.css">
-    <script src="script.js" defer ></script>
-    <link rel="stylesheet" href="style.css" media="all">
+    <script src="public/js/script.js" defer ></script>
+    <link rel="stylesheet" href="public/css/style.css" media="all">
 </head>
 <body>
     <header>
@@ -29,8 +29,8 @@
             <ul class="simple">
                 <li><a href="#section1">Accueil</a><hr></li>
                 <li><a href="#section2">À propos</a><hr></li>
-                <li><a href="">Projets</a><hr></li>
                 <li><a href="#section3">Compétences</a><hr></li>
+                <li><a href="#section4">Projets</a><hr></li>
             </ul>
             <a class="cv" href="KEVINCV.pdf" target="_blank">
                 Télécharger CV
@@ -47,7 +47,7 @@
                 <a href="">Travailler avec moi</a>
             </div>
             <div class="myself">
-                <img src="myimage.png" alt="">
+                <img src="public/image/myimage.png" alt="">
                 <div class="round"></div>
             </div>
         </div>
@@ -62,13 +62,13 @@
             <div class="about">
                 <p>À propos de moi</p>
                 <h2>Développeur LARAVEL /</h2>
-                <h2>SYMFONY</h2>
+                <h2>SYMFONY / VueJs</h2>
             </div>
             <div class="image">
                 <div class="square">
 
                 </div>
-                <img src="myimage.png" alt="">
+                <img src="public/image/myimage.png" alt="">
             </div>
         </div>
         <div class="information">
@@ -109,7 +109,7 @@
                         </div>
                         <div>
                             <h3>Education</h3>
-                            <p>M1-Management de Systeme d'Information</p>
+                            <p>Master 1-Management de Systeme d'Information</p>
                         </div>
                         <div>
                             <h3>Age</h3>
@@ -178,6 +178,11 @@
                     <div class="barAr react"></div>
                 </div>
                 <div class="name">
+                    <h4>VueJs</h4>
+                    <div class="bar"></div>
+                    <div class="barAr vuejs"></div>
+                </div>
+                <div class="name">
                     <h4>Bootstrap</h4>
                     <div class="bar"></div>
                     <div class="barAr bootstrap"></div>
@@ -213,8 +218,39 @@
             </div>
         </div>
     </section>
-    <section class="">
-
+    <section id="section4" class="section4">
+        <h2>Projets personnel</h2>
+        <div class="projetLaravel">
+            <div class="esakafo">
+                <img src="public/image/esakafo.png" alt="projet E-sakafo">
+                <div class="descri">
+                    <h3>E-SAKAFO</h3>
+                    <p>C'est un projet personnel qui m'a permis de bien simuller LARAVEL</p>
+                    <p>Une application web qui permet aux utilisateur de commander des plats en ligne sur les restaurants d'Antananarivo</p>
+                    <p>LARAVEL, SASS, JavaScript, MySQL</p>
+                </div>
+            </div>
+            <div class="evoyage">
+                <img src="public/image/evoyage.png" alt="projet E-voyage">
+                <div class="descri">
+                    <h3>E-VOYAGE</h3>
+                    <p>Le projet qui m'a marqué le plus</p>
+                    <p>Le plus grand projet que j'ai développer dépuis le jours ou j'ai appris a coder
+                    Une application web qui permet aux utilisateurs de reserver un, ou plusieur places pour une voyage terrestre
+                    </p>
+                    <p>LARAVEL, SASS, JavaScript, MySQL</p>
+                </div>
+            </div>
+            <div class="evoyage">
+                <img src="public/image/studentmanagement.png" alt="projet E-voyage">
+                <div class="descri">
+                    <h3>School Management</h3>
+                    <p>Le projet qui m'a permi de bien simuler laravel en tant qu'API</p>
+                    <p>Gestion d'ecole qui a comme fonctionnalités la gestion des élèves, la gestion des emplois du temps, enseignants, et les frais scolaire...</p>
+                    <p>LARAVEL, Bootstrap, VueJs, MySQL</p>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
 
