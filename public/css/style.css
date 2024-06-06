@@ -493,7 +493,16 @@ header nav .simple{
     width: 25%;
   }
 }
+@media screen and  (max-width : 330px) {
+  .section1 .banner .description h1 {
+    font-size: 2rem;
+  }
+  header nav .cv {
+    font-size: .7em;
+  }
+}
 @media screen and  (max-width : 500px) {
+ 
   .section2 .title .image{
     display: none;
   }
@@ -515,6 +524,7 @@ header nav .simple{
     width: 100%;
   }
 }
+
 @media screen and  (max-width : 350px) {
   .section1 .banner {
     padding: 1vw;
