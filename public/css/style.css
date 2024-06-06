@@ -464,3 +464,39 @@ header nav .cv:hover {
   font-family: roboto;
 }
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width : 775px) {
+  .section2 .title .image{
+    display: none;
+  }
+  .section2 .information .personnalInfo a{
+    width: 25%;
+  }
+}
+@media screen and  (max-width : 500px) {
+  .section2 .title .image{
+    display: none;
+  }
+  .section2 .information .personnalInfo a{
+    width: 48%;
+  }
+  .section2 {
+    flex-wrap: wrap;
+  }
+  .section2 .title, .section2 .information{
+    width: 100%;
+  }
+}
+@media screen and  (max-width : 700px) {
+  .section1 .banner .myself{
+    display: none;
+  }
+  .section1 .banner .description{
+    width: 100%;
+  }
+}
+@media screen and  (max-width : 350px) {
+  .section1 .banner {
+    padding: 1vw;
+  }
+}
