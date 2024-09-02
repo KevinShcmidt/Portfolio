@@ -30,7 +30,7 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.target.id === 'list' && entry.isIntersecting) {
         animateProgressBar(60, progressBarGit);
-        animateProgressBar(80, progressBarBootstrap);
+        animateProgressBar(70, progressBarBootstrap);
         animateProgressBar(50, progressBarPhp);
         animateProgressBar(30, progressBarJs);
         animateProgressBar(60, progressBarLaravel);
@@ -45,7 +45,7 @@ const observer = new IntersectionObserver(entries => {
         animateProgressBar(70, progressBarGithub);
         animateProgressBar(30, progressBarJava);
         animateProgressBar(50, progressBarVueJs);
-        animateProgressBar(50, progressBarTailwind);
+        animateProgressBar(80, progressBarTailwind);
 
     }   
   });
