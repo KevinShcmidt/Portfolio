@@ -32,7 +32,7 @@ const observer = new IntersectionObserver(entries => {
         animateProgressBar(60, progressBarGit);
         animateProgressBar(70, progressBarBootstrap);
         animateProgressBar(50, progressBarPhp);
-        animateProgressBar(30, progressBarJs);
+        animateProgressBar(60, progressBarJs);
         animateProgressBar(60, progressBarLaravel);
         animateProgressBar(30, progressBarSymfony);
         animateProgressBar(80, progressBarSASS);
