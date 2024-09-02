@@ -14,6 +14,7 @@ const progressBarGithub= document.querySelector('.github');
 const progressBarPostman = document.querySelector('.postman');
 const progressBarVscode = document.querySelector('.vscode');
 const progressBarPrestashop = document.querySelector('.prestashop');
+const progressBarTailwind = document.querySelector('.tailwind');
 
 
 
@@ -38,12 +39,13 @@ const observer = new IntersectionObserver(entries => {
         animateProgressBar(80, progressBarCSS);
         animateProgressBar(80, progressBarHtml);
         animateProgressBar(70, progressBarPostman);
-        animateProgressBar(30, progressBarReact);
+        animateProgressBar(60, progressBarReact);
         animateProgressBar(40, progressBarPrestashop);
         animateProgressBar(70, progressBarVscode);
         animateProgressBar(70, progressBarGithub);
         animateProgressBar(30, progressBarJava);
         animateProgressBar(50, progressBarVueJs);
+        animateProgressBar(50, progressBarTailwind);
 
     }   
   });
@@ -108,6 +110,8 @@ function animateProgressBar(targetWidth, techno) {
             break;
         case techno = progressBarReact:
             progressBarReact.style.width = `${currentWidth}%`;
+        case techno = progressBarTailwind:
+            progressBarTailwind.style.width = `${currentWidth}%`;
         default:
             break;
       }
