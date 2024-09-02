@@ -39,7 +39,7 @@ const observer = new IntersectionObserver(entries => {
         animateProgressBar(80, progressBarCSS);
         animateProgressBar(80, progressBarHtml);
         animateProgressBar(70, progressBarPostman);
-        animateProgressBar(60, progressBarReact);
+        animateProgressBar(70, progressBarReact);
         animateProgressBar(40, progressBarPrestashop);
         animateProgressBar(70, progressBarVscode);
         animateProgressBar(70, progressBarGithub);
