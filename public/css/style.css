@@ -227,9 +227,10 @@ header nav .simple{
 .section1 .banner .myself img {
   z-index: 1;
   width: auto;
-  height: 70vh;
+  height: 102vh;
   position: absolute;
-  top: -24vh;
+  left: 2vw;
+  top: -55vh;
 }
 .section1 .media {
   display: flex;
@@ -441,16 +442,57 @@ header nav .simple{
   font-size: 2em;
   font-family: nexa;
 }
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* S'assurer que le conteneur prend toute la largeur */
+}
+
+
+.slider .esakafo {
+  min-width: 350px;
+  flex-shrink: 0;
+}
+
+/* Boutons */
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 2;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
 
 .section4 .projetLaravel{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 22px;
-  flex-wrap: wrap;
 }
 
-.section4 .projetLaravel .esakafo, .section4 .projetLaravel .evoyage{
+.section4 .projetLaravel .esakafo{
   width: 350px;
   background-color: #232421;
   display: flex;
@@ -466,19 +508,19 @@ header nav .simple{
   border-radius: 5px 5px 0 0;
 }
 
-.section4 .projetLaravel .esakafo .descri, .section4 .projetLaravel .evoyage .descri{
+.section4 .projetLaravel .esakafo .descri{
   width: 100%;
   padding: 1vw;
 }
 
-.section4 .projetLaravel .esakafo .descri h3, .section4 .projetLaravel .evoyage .descri h3 {
+.section4 .projetLaravel .esakafo .descri h3{
   color: #aaaaa8;
   font-size: 1em;
   font-weight: bold;
   font-family: nexa;
 }
 
-.section4 .projetLaravel .esakafo .descri p, .section4 .projetLaravel .evoyage .descri p {
+.section4 .projetLaravel .esakafo .descri p{
   color: #989b8a;
   font-size: .8em;
   font-family: roboto;
